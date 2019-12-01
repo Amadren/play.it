@@ -60,7 +60,7 @@ build_pkg_arch(){
 	tar -cf - .PKGINFO * | xz -0 -c -z - > "${desc}-${vers}.pkg.tar.xz"
 	mv "${desc}-${vers}.pkg.tar.xz" "${s_dir}/${desc}-${vers}.pkg.tar.xz"
 	rm -rf "${dir}" "${PKG_TMPDIR}"
-    cd ${s_dir}
+	cd "${s_dir}"
 }
 
 
